@@ -1,44 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 
-function App() {
-  return (
-    <div className="container">
-      <form onSubmit={(e) => login(e)}>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" />
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  );
-}
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
-function login(e) {
-  e.preventDefault();
-  let request = {
-    email: document.getElementById('exampleInputEmail1').value,
-    password: document.getElementById('exampleInputPassword1').value,
+//Pages
+import MainPage from "./pages";
+import Login from "./pages/login";
+import Guideline from "./pages/guideline";
+import PriceComparison from "./pages/priceComparison";
+import NotFoundPage from "./pages/404";
+
+
+
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/guideline" component={Guideline} />
+          <Route exact path="/priceComparison" component={PriceComparison} />
+          <Route exact path="/404" component={NotFoundPage} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
+    );
   }
-  axios.post('http://localhost:3000/login', request)
-    .then(resp => {
-      alert(resp.data.message);
-    })
-    .catch(err => {
-      console.log(err)
-    })
 }
 
 export default App;
