@@ -1,0 +1,7 @@
+
+.container{
+  margin-left: 0;
+  display: absolute;
+  max-width: 1024px;
+  max-height: 720px;
+}

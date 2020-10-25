@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import axios from 'axios';
-import { render } from "@testing-library/react";
+// import { Link } from "react-router-dom";
+// import axios from 'axios';
+// import { render } from "@testing-library/react";
 import Navbar from "../components/Navbar1";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './guideline.css';
 import logo from '../icons/Home.png';
 import star from '../icons/star.svg';
@@ -32,8 +32,9 @@ class GuidelineStl extends React.Component {
     console.log(result);
     return (
       <>
-        <div>
+        <div className="heading">
           <img className="logo" src={logo} alt="Logo" />
+          <h4 className="name">AusNewRenters</h4>
         </div>
 
         <div className="sidebar">

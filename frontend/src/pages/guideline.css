@@ -9,12 +9,23 @@
   line-height: 22px;
 }
 
-.logo{
-  width: 43px;
-  height: 43px;
+.heading{
   display: flex;
 }
+.logo{
+  margin: 0 10px 0 36px;
+  width: 43px;
+  height: 43px;
+  float: left
+}
 
+.name{
+  float: left;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #ed683c;
+  margin: 10px 0 0 0;
+}
 .container{
   margin-left: 269px;
   display: absolute;
