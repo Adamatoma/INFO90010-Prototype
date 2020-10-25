@@ -15,7 +15,7 @@ const MainPage = () => {
                 </Link>
             </div >
             <div>
-                <Link to="/guideline">
+                <Link to="/guideline/sign-the-lease">
                     <button type="button" class="btn btn-outline-primary">Go to Guideline</button>
                 </Link>
                 <Link to="/priceComparison">
