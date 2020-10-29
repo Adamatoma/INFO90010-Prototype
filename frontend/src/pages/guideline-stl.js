@@ -11,7 +11,9 @@ import star from '../icons/star.svg';
 class GuidelineStl extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { guideline: [] };
+    this.state = {
+      guideline: []
+    };
   }
 
   callAPI() {
@@ -23,7 +25,6 @@ class GuidelineStl extends React.Component {
 
   componentDidMount() {
     this.callAPI();
-
   }
 
   render() {
@@ -59,7 +60,7 @@ class GuidelineStl extends React.Component {
                       </div>
                       <div style={{ fontSize: '9px', color: '#7f7f7f' }}>Source: {item.Source_Name}</div>
                       <p className="item-content"> {item.Content}</p>
-                      <div style={{ fontSize: '9px', color: '#7f7f7f' }}>{item.Source_Link}</div>
+                      <a style={{ fontSize: '9px', color: '#7f7f7f' }} href={item.Source_Link}>{item.Source_Link}</a>
                     </li>
                   )
                 })}

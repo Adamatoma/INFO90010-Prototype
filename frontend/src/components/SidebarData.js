@@ -6,7 +6,7 @@ import * as IoIcons from 'react-icons/io';
 export const SidebarData = [
   {
     title: 'Rental market overview',
-    path: '/guideline/rmo',
+    path: '/guideline/rental-market-overview',
     cName: 'nav-text'
   },
   {
@@ -72,7 +72,7 @@ export const SidebarData = [
   },
   {
     title: 'Lease break',
-    path: '/guideline/lb',
+    path: '/guideline/lease-break',
     cName: 'nav-text'
   },
   {

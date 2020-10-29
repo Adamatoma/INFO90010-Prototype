@@ -1,7 +1,70 @@
 
-.container{
-  margin-left: 0;
+.map-container{
+  margin: auto;
   display: absolute;
-  max-width: 1024px;
-  max-height: 720px;
+  width: 70%;
+  padding: 0;
+}
+
+.text-box{
+  margin: auto;
+  width: 100%;
+}
+
+.search {
+  position: absolute;
+  top: 220px;
+  left: 600px;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 56px;
+  z-index: 10;
+}
+.search input {
+  padding: 0.5rem;
+  font-size: 17px;
+  width: 100%;
+}
+.data-reach-popover.data-reach-combobox-popover{
+  background-color: white;
+}
+.card{
+  display: inline;
+  width:600px;
+  height: 400px;
+}
+.content-image{
+  width:200px;
+  height:200px;
+  height: auto;
+  float: left;
+}
+.content-left{
+  float: left;
+  width:200px;
+  height:200px;
+  margin-left: 10px;
+  border-right-style: dotted;
+  border-color: grey;
+  border-width: 1pt;
+  border-bottom-style: dotted;
+}
+.content-right{
+  float: right;
+  display: grid;
+  width:200px;
+  height:200px;
+  border-color: grey;
+  border-width: 1pt;
+  border-bottom-style: dotted;
+}
+.content-right-main{
+  display: inline;
+  font-size: 20px;
+}
+.content-right-name{
+  float:left;
+}
+.content-right-price{
+  float:right;
 }

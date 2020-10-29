@@ -22,7 +22,7 @@ function Navbar1() {
               </a>
             </li>
             <li>
-              <a className="navbar-links" href="/guideline">
+              <a className="navbar-links" href="/guideline/sign-the-lease">
                 Guidelines
               </a>
             </li>
