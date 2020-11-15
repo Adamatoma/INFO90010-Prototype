@@ -1,0 +1,15 @@
+INSERT INTO rental_process (Rental_Process) VALUES ('Rental market overview');
+INSERT INTO rental_process (Rental_Process) VALUES ('Tenant rights');
+INSERT INTO rental_process (Rental_Process) VALUES ('Rental process');
+INSERT INTO rental_process (Rental_Process) VALUES ('Local lingo');
+INSERT INTO rental_process (Rental_Process) VALUES ('Location');
+INSERT INTO rental_process (Rental_Process) VALUES ('Start searching');
+INSERT INTO rental_process (Rental_Process) VALUES ('Contact agency');
+INSERT INTO rental_process (Rental_Process) VALUES ('Inspection');
+INSERT INTO rental_process (Rental_Process) VALUES ('Application');
+INSERT INTO rental_process (Rental_Process) VALUES ('Sign the lease');
+INSERT INTO rental_process (Rental_Process) VALUES ('Documents');
+INSERT INTO rental_process (Rental_Process) VALUES ('Move in');
+INSERT INTO rental_process (Rental_Process) VALUES ('Communication');
+INSERT INTO rental_process (Rental_Process) VALUES ('Lease break');
+INSERT INTO rental_process (Rental_Process) VALUES ('Lease transfer');
