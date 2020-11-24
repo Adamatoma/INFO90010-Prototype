@@ -9,10 +9,10 @@ Then the project will be downloaded into your local pc.
 
 # Installation
 1. Mysql
-     (1) Please download MYSQL by this link: https://www.mysql.com/downloads/
-     (2) Set the user (with "root") and password (with "prototype123") for further backend connecting.
-     (2) Use and execute the create table script in the opened mysql query box.
-     (3) Use and execute the insert data script in the opened mysql query box.
+(1) Please download MYSQL by this link: https://www.mysql.com/downloads/
+(2) Set the user (with "root") and password (with "prototype123") for further backend connecting.
+(3) Use and execute the create table script in the opened mysql query box.
+(4) Use and execute the insert data script in the opened mysql query box.
 2. Nodejs
       You also need to install node from this website https://nodejs.org/
 # Build up
