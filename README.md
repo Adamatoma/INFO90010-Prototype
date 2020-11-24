@@ -21,7 +21,7 @@ Then the project will be downloaded into your local pc.
 npm install mysql --save
 ```
 2. Run command "npm start" to start the backend.
-3. If step 1 is working. Then use cd command to enter "frontend" folder, then run command "npm run start" to start the frontend.
+3. After step 2 is working and backend has been built up. Then use cd command to enter "frontend" folder, then run command "npm run start" to start the frontend.
 
 # Important
 1. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:https://console.cloud.google.com/google/maps-apis/start
