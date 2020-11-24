@@ -16,8 +16,12 @@ Then the project will be downloaded into your local pc.
 2. Nodejs
       You also need to install node from this website https://nodejs.org/
 # Build up
-1. Use cd command to enter "backend" folder, then run command "npm start" to start the backend
-2. If step 1 is working. Then use cd command to enter "frontend" folder, then run command "npm run start" to start the frontend
+1. Use cd command to enter "backend" folder, and run the following code to install mysql connection package.
+```javascript
+npm install mysql --save
+```
+2. Run command "npm start" to start the backend.
+3. If step 1 is working. Then use cd command to enter "frontend" folder, then run command "npm run start" to start the frontend.
 
 # Important
 1. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:https://console.cloud.google.com/google/maps-apis/start
