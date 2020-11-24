@@ -20,7 +20,6 @@ Then the project will be downloaded into your local pc.
 2. If step 1 is working. Then use cd command to enter "frontend" folder, then run command "npm run start" to start the frontend
 
 # Important
-     1. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:
-          https://console.cloud.google.com/google/maps-apis/start
-     2. After you have the API Key, you also need to create a file called ".env.local" under your local frontend folder. Then add content as shown here:
-          REACT_APP_GOOGLE_KEY="your API Key here"
+1. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:https://console.cloud.google.com/google/maps-apis/start
+2. After you have the API Key, you also need to create a file called ".env.local" under your local frontend folder. Then add content as shown here:
+     REACT_APP_GOOGLE_KEY="your API Key here"
