@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.15, for macos10.14 (x86_64)
 --
--- Host: localhost    Database: rental
+-- Host: localhost    
 -- ------------------------------------------------------
 -- Server version	8.0.15
 
@@ -14,6 +14,13 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Create database
+--
+
+CREATE DATABASE rental;
+use rental;
 
 --
 -- Table structure for table `guideline`
@@ -64,17 +71,20 @@ CREATE TABLE `property` (
   `Reference` varchar(500) NOT NULL COMMENT 'Reference address in file repository ”src/property-imgs/property.jpg”',
   PRIMARY KEY (`Property_Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+ALTER TABLE property
+MODIFY COLUMN Available_Date VARCHAR(50);
+
+ALTER TABLE property
+MODIFY COLUMN Price VARCHAR(20);
+
+ALTER TABLE property
+CHANGE Prop_type Property_type VARCHAR(30) NOT NULL DEFAULT '1Bed 1Bath';
+
+ALTER TABLE property
+CHANGE `Reference` Img_reference VARCHAR(500) NOT NULL COMMENT 'Reference address in file repository ”src/property-imgs/property.jpg”';
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `property`
---
-
-LOCK TABLES `property` WRITE;
-/*!40000 ALTER TABLE `property` DISABLE KEYS */;
-INSERT INTO `property` VALUES (1,'5507/462 Elizabeth St Melbourne VIC 3000','2b1b0p',480.00,'Domain','2020-10-25 00:00:00','5507/462 Elizabeth St Melbourne VIC 3000 domain.jpg'),(2,'5507/462 Elizabeth St Melbourne VIC 3000','2b1b0p',480.00,'Real Estate','2020-10-25 00:00:00','5507/462 Elizabeth St Melbourne VIC 3000 realestate.jpg'),(3,'4301/483 Swanston Street Melbourne VIC 3000','3b2b0p',750.00,'Domain','2020-10-25 00:00:00','4301/483 Swanston Street Melbourne VIC 3000 domain.jpg'),(4,'4301/483 Swanston Street Melbourne VIC 3000','3b2b0p',750.00,'Domain','2020-10-25 00:00:00','4301/483 Swanston Street Melbourne VIC 3000 realestate.jpg');
-/*!40000 ALTER TABLE `property` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `rental_process`
