@@ -78,7 +78,7 @@ ALTER TABLE property
 MODIFY COLUMN Price VARCHAR(20);
 
 ALTER TABLE property
-CHANGE Prop_type Property_type VARCHAR(30) NOT NULL DEFAULT '1Bed 1Bath';
+CHANGE Type Property_type VARCHAR(30) NOT NULL DEFAULT '1Bed 1Bath';
 
 ALTER TABLE property
 CHANGE `Reference` Img_reference VARCHAR(500) NOT NULL COMMENT 'Reference address in file repository ”src/property-imgs/property.jpg”';
