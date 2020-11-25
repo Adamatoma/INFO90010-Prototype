@@ -31,9 +31,11 @@ sudo npm install react-scripts --unsafe-perm
 sudo npm install --unsafe-perm
 npm install react-bootstrap --save
 ```
-4. Then run command "npm run start" to start the frontend.
-
 # Important
-1. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:https://console.cloud.google.com/google/maps-apis/start
-2. After you have the API Key, you also need to create a file called ".env.local" under your local frontend folder. Then add content as shown here:
+4. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:https://console.cloud.google.com/google/maps-apis/start
+5. After you have the API Key, you also need to create a file called ".env.local" under your local frontend folder. Then add content as shown here:
      `REACT_APP_GOOGLE_KEY="`your API Key here`"`
+     
+6. Then run command "npm run start" to start the frontend.
+
+
