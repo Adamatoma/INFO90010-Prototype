@@ -11,7 +11,10 @@ Then the project will be downloaded into your local pc.
 1. Mysql
 (1) Please download MYSQL by this link: https://www.mysql.com/downloads/
 (2) Set the user (with "root") and password (with "prototype123") for further backend connecting.
-(4) Use and execute the create table script in the opened mysql query box.
+(3) Use and execute the create table script in the opened mysql query box.
+
+(After that you will see a new database schema called "rental" is created, in which you might want to check tables and data. But bear in mind that, these data are only example data for prototype displaying, though some information is realistic.)
+
 2. Nodejs
       You also need to install node from this website https://nodejs.org/
 # Build up
