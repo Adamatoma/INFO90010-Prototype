@@ -43,7 +43,8 @@ var imageStyle = {
 
 export default function Map() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_KEY,
+    googleMapsApiKey: "AIzaSyDKKOrM-7XA7DdxvdhPSgDudt0EbfQ6Pd0",
+    // googleMapsApiKey: process.env.REACT_APP_GOOGLE_KEY,
     language: "en-AU",
     libraries,
   });
@@ -64,16 +65,16 @@ export default function Map() {
     };
   }, []);
 
-  const onMapClick = React.useCallback((e) => {
-    setMarkers((current) => [
-      ...current,
-      {
-        lat: e.latLng.lat(),
-        lng: e.latLng.lng(),
-        time: new Date(),
-      },
-    ]);
-  }, []);
+  // const onMapClick = React.useCallback((e) => {
+  //   setMarkers((current) => [
+  //     ...current,
+  //     {
+  //       lat: e.latLng.lat(),
+  //       lng: e.latLng.lng(),
+  //       time: new Date(),
+  //     },
+  //   ]);
+  // }, []);
 
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback((map) => {
@@ -108,7 +109,7 @@ export default function Map() {
         zoom={10}
         center={center}
         options={options}
-        onClick={onMapClick}
+        // onClick={onMapClick}
         onLoad={onMapLoad}
       >
         {markers.map((marker) => (
