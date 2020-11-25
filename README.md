@@ -25,10 +25,10 @@ npm install mysql --save
 2. Run command "npm start" to start the backend.
 3. After step 2 is working and backend has been built up. Then use cd command to enter "frontend" folder and execute following code to install "react-scripts" package: (Note: If the below commands throw an error 'bash: sudo: command not found' please delete the word 'sudo')
 ```javascript
-sudo rm -rf node_modules/ package-lock.json
-sudo npm cache clean --force
-sudo npm install react-scripts --unsafe-perm
-sudo npm install --unsafe-perm
+rm -rf node_modules/ package-lock.json
+npm cache clean --force
+npm install react-scripts --unsafe-perm
+npm install --unsafe-perm
 npm install react-bootstrap --save
 ```
 4. In order to make sure the Map function is working, you also need to register and achieve a google map API Key from the following link:https://console.cloud.google.com/google/maps-apis/start
