@@ -23,12 +23,12 @@ Then the project will be downloaded into your local pc.
 npm install mysql --save
 ```
 2. Run command "npm start" to start the backend.
-3. After step 2 is working and backend has been built up. Then use cd command to enter "frontend" folder and execute following code to install "react-scripts" package:
+3. After step 2 is working and backend has been built up. Then use cd command to enter "frontend" folder and execute following code to install "react-scripts" package: (Note: If the above commands throw an error 'bash: sudo: command not found' please delete the word 'sudo')
 ```javascript
-$ sudo rm -rf node_modules/ package-lock.json
-$ sudo npm cache clean --force
-$ sudo npm install react-scripts --unsafe-perm
-$ sudo npm install --unsafe-perm
+sudo rm -rf node_modules/ package-lock.json
+sudo npm cache clean --force
+sudo npm install react-scripts --unsafe-perm
+sudo npm install --unsafe-perm
 npm install react-bootstrap --save
 ```
 4. Then run command "npm run start" to start the frontend.
